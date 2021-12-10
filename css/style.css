@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient( #f2f4f5, #b0e1f0);
+}
+/* Header */
+.header{
+    
+    display: flex;
+    
+}
+.logo{
+   flex: 1;
+}
+.font-effect-fire{
+    flex: 7;
+    /* font-size: 2rem; */
+    /* color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px red;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+/* Main */
+.main{
+    display: flex;
+}
+/* Left */
+.left{
+    background-image: linear-gradient(to bottom, #330d9c, #1c6b99, #1137b4, #c0dcfc,
+     #c2d4f9, #bfcdf8, #bdc6f6, #bdbef3, #b5b6f3, #adaef4, #a4a6f4, #9c9ef4);
+    width: 250px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 20px;
+    border-color: rgb(0, 247, 255);
+}
+.font-effect-neon{
+    color: plum;
+    margin-left: 20PX;
+    margin-top: 0px;
+    margin-right: 20PX;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+div.left label{
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;  
+}
+div.left input{
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 181px;
+    height: 25px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.btn-submit{
+    margin-left: 60px;
+    height: 40px;
+    width: 90px;
+}
+/* Right */
+.right{
+    margin: 20px 20px 20px 5px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #330d9c, #1c6b99, #1137b4, #c0dcfc,
+     #c2d4f9, #bfcdf8, #bdc6f6, #bdbef3, #b5b6f3, #adaef4, #a4a6f4, #9c9ef4);
+     border-color: rgb(0, 247, 255);
+}
+.search{
+    float: left;
+    
+    
+}
+div.search button{
+    background-color: #3109e0;
+    color: rgb(248, 241, 241);
+}
+div .right h3{
+    font-size: 25px;
+    color: rgb(243, 0, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hanhdong{
+   display: flex;
+   justify-content: space-evenly;
+   align-content: center;
+}
+button{
+    border: #ccc;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 20px;
+    width: 70px;
+    margin-top: 10px;
+}

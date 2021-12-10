@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý lớp học</title>
+    <script src="./js/student.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/khoa.js"></script>
+    <script src="./js/lop.js"></script>
+    <script src="./js/sinhvien.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="font-effect-fire">QUẢN LÝ SINH VIÊN</div>
+        </div>
+        <div class="main">
+            <div class="left" id="input" >
+                <h3 class="font-effect-neon" style="font-size: 20px;">Nhập thông tin sinh viên</h3>
+                <label for="">Họ Và Tên</label>
+                <input type="text" id="nameStudent" style="width: 180px;height: 30px; margin-left: 20px; border-radius: 20px; border: 2px solid black;"  >
+                </br></br>
+                <label for="">Mã Sinh viên</label>
+                <input type="text" id="idStudent">
+                </br></br>
+                <label for="">Lớp</label>
+                <select type="text" id="classStudent" style="width: 190px;height: 30px; margin-left: 20px; border-radius: 20px; border: 2px solid black;"  ></select>
+                </br></br>
+                <label for="">Khóa</label>
+                <select type="text" id="departmentStudent" style="width: 190px;height: 30px; margin-left: 20px; border-radius: 20px; border: 2px solid black;"  ></select>
+                </br></br>
+                <label for="">Toán</label>
+                <input type="text" id="mathStudent">
+                </br></br>
+                <label for="">Lý</label>
+                <input type="text" id="physicStudent">
+                </br></br>
+                <label for="">Hoá</label>
+                <input type="text" id="chemistryStudent">
+                </br></br>
+                <button type="submit" id="btnAdd" class="btn-submit">Lưu lại</button>
+            </div>
+            <div class="left" id ="edit" style="display: none;">
+                <h3 class="font-effect-neon">Sửa Danh Sách</h3>
+                <label for="">Họ và tên</label>
+                <input type="text" id="nameEditStudent">
+                </br></br>
+                <label for="">Mã Sinh viên</label>
+                <input type="text" id="idEditStudent">
+                </br></br>
+                <label for="">Lớp</label>
+                <select type="text" id="classEditStudent" style="width: 190px;height: 30px; margin-left: 20px; border-radius: 20px; border: 2px solid black;"  ></select>
+                </br></br>
+                <label for="">Khoá</label>
+                <select type="text" id="departmentEditStudent" style="width: 190px;height: 30px; margin-left: 20px; border-radius: 20px; border: 2px solid black;"  ></select>
+                </br></br>
+                <label for="">Toán</label>
+                <input type="text" id="mathEditStudent">
+                </br></br>
+                <label for="">Lý</label>
+                <input type="text" id="physicEditStudent">
+                </br></br>
+                <label for="">Hoá</label>
+                <input type="text" id="chemistryEditStudent">
+                </br></br>
+                <button type="submit" id="btnEdit" onclick="updateStd()" class="btn-submit">Lưu lại</button>
+            </div>
+            
+            <div class="right">
+                
+                
+                <div class="" >
+                    <input type="text" id="themlop" class="text-search" placeholder="Thêm Lớp" style="border-radius: 20PX;height: 20px"></input>
+                    <button class="btn-search" onclick="themlop()" id="btnSearch">RUN</button>
+                </div>
+            </br>
+                <div class="" style="float: left;">
+                
+                <input type="text" id="themkhoa" class="text-search" placeholder="Thêm khoá" style="border-radius: 20PX;height: 20px"></input>
+                <button class="btn-search" onclick="themkhoa()" id="btnSearch">RUN</button>
+            </div>
+                <div class="search" >
+                    <div id="" style="margin-left: 70px; margin-top: 7px;height: 35px;">
+                        
+                    <input type="text" id="search" placeholder="Tên Sinh Viên" style="border-radius: 20px;" >
+                    <button onclick="search()">Search</button>
+                    
+                    Tên Lớp
+                    <select type="text" id="tenlop" placeholder="Tên Lớp" style="border-radius: 20px;" ></select>
+                    <button onclick="search2()">Search</button>
+                
+                    Tên Khoá
+                    <select type="text" id="tenkhoa" placeholder="Tên Khóa" style="border-radius: 20px;" ></select>
+                    <button onclick="search()">Search</button>
+                    </div>
+                </div>
+                <table class="table" id="display" width="930"  style="border-radius: 20px; border: 5px solid rgb(253, 0, 211); text-align: center;"></table>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<style>
+    body {
+      background-image: url('nen2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    
+    </style>
+</html>
